@@ -14,20 +14,35 @@
 ## Ход работы
 ## Установка Docker
 Установка Docker Engine:
+
 Обновление существующих списков пакетов:
+
 #sudo apt update
+
 Установка обязательных пакетов, которые позволяют apt использовать пакеты по HTTPS:
+
 #sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
 Добавление ключа GPG официального репозитория Docker в систему:
+
 #curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
 Добавление репозитория Docker:
+
 #echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
 Обновление списка пакетов:
+
 #sudo apt update
+
 Указание установки из репозитория Docker:
+
 #apt-cache policy docker-ce
+
 Установка Docker:
+
 #sudo apt install docker-ce
+
 Проверка работоспособности Docker:
 
 Установим Docker Compose:
