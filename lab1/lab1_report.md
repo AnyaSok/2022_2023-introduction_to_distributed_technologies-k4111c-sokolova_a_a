@@ -21,57 +21,57 @@
 
 Установка обязательных пакетов, которые позволяют apt использовать пакеты по HTTPS:
 
-#sudo apt install apt-transport-https ca-certificates curl software-properties-common
+> sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
 Добавление ключа GPG официального репозитория Docker в систему:
 
-#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+> curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
 Добавление репозитория Docker:
 
-#echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+> echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 Обновление списка пакетов:
 
-#sudo apt update
+> sudo apt update
 
 Указание установки из репозитория Docker:
 
-#apt-cache policy docker-ce
+> apt-cache policy docker-ce
 
 Установка Docker:
 
-#sudo apt install docker-ce
+> sudo apt install docker-ce
 
 Проверка работоспособности Docker:
 
 Установим Docker Compose:
 Запуск команды для установки последней версии docker-compose:
-#curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-#chmod +x /usr/local/bin/docker-compose
+> curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+> chmod +x /usr/local/bin/docker-compose
 Проверка установки docker-compose:
 
 ## Установка  minikube 
-#curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-#sudo install minikube-linux-amd64 /usr/local/bin/minikube
+> curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+> sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 ## Запуск minikube cluster
-#minikube start
+> minikube start
 
 ## Взаимодействие с k8s
-#minikube kubectl
+> minikube kubectl
 
 ## Написание манифеста для развертывания "пода" HashiCorp Vault, и проброс внутрь порта 8200
 
 Создание пода:
-#kubectl apply -f vaultpod.yml
+> kubectl apply -f vaultpod.yml
 Создание сервиса для доступа к контейнеру:
-#kubectl expose pod vault --port=8200 --type=NodePort
+> kubectl expose pod vault --port=8200 --type=NodePort
 kubectl port-forward позволяет использовать имя ресурса для выбора соответствующего модуля для переадресации порта:
-#minikube kubectl -- port-forward pod/vault 8200:8200
+> minikube kubectl -- port-forward pod/vault 8200:8200
 
 Вывод логов vault:
-#kubectl logs vault
+> kubectl logs vault
 
 Вход в vault, используя токен:
 
