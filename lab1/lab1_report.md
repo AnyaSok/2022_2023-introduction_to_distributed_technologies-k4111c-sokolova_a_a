@@ -23,7 +23,7 @@ sudo apt update
 
 Установка обязательных пакетов, которые позволяют apt использовать пакеты по HTTPS:
 
-`sudo apt install apt-transport-https ca-certificates curl software-properties-common`
+```sudo apt install apt-transport-https ca-certificates curl software-properties-common```
 
 Добавление ключа GPG официального репозитория Docker в систему:
 
