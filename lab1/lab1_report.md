@@ -67,6 +67,7 @@ curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-comp
 chmod +x /usr/local/bin/docker-compose
 ```
 Проверка установки docker-compose:
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/docker-compose.jpg)
 
 ## Установка  minikube 
 ```
@@ -99,15 +100,21 @@ kubectl port-forward позволяет использовать имя ресу
 minikube kubectl -- port-forward pod/vault 8200:8200
 ```
 
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/port-forward.jpg)
+
 Вывод логов vault:
 ```
 kubectl logs vault
 ```
 
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/token.jpg)
+
 Вход в vault, используя токен:
 
-## Создание схемы организации контейнеров и сервисов
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/vault.jpg)
 
+## Создание схемы организации контейнеров и сервисов
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/diagram.png)
 
 
 
