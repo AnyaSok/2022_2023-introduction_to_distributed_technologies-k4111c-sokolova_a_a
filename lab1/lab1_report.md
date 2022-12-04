@@ -89,6 +89,7 @@ minikube kubectl
 
 ## Написание манифеста для развертывания "пода" HashiCorp Vault, и проброс внутрь порта 8200
 ```
+yaml
 apiVersion: v1
 kind: Pod
 metadata: 
