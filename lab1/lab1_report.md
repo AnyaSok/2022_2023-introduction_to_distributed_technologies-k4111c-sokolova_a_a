@@ -58,6 +58,7 @@ sudo apt install docker-ce
 ```
 
 Проверка работоспособности Docker:
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/a61d9a6e8a096cc3a47916de72732467d62fb78a/lab1/images/status_docker.jpg)
 
 Установим Docker Compose:
 Запуск команды для установки последней версии docker-compose:
