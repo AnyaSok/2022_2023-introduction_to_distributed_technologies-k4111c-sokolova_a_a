@@ -88,6 +88,9 @@ minikube kubectl
 ```
 
 ## Написание манифеста для развертывания "пода" HashiCorp Vault, и проброс внутрь порта 8200
+```
+https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/dadd05c8e528914f9af8f41c7b78c396fa903813/lab1/vaultpod.yml
+```
 
 Создание пода:
 ```
