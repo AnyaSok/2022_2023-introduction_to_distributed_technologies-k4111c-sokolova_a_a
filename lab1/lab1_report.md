@@ -58,6 +58,7 @@ sudo apt install docker-ce
 ```
 
 Проверка работоспособности Docker:
+
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/a61d9a6e8a096cc3a47916de72732467d62fb78a/lab1/images/status_docker.jpg)
 
 Установим Docker Compose:
@@ -67,6 +68,7 @@ curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-comp
 chmod +x /usr/local/bin/docker-compose
 ```
 Проверка установки docker-compose:
+
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/docker-compose.jpg)
 
 ## Установка  minikube 
