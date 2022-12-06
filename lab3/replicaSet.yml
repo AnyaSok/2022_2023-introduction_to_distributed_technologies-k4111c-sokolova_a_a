@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: rs
-  namespace: lesson2
+  namespace: lesson3
   labels:
     app: lab3
 spec:
