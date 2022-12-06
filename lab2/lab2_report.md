@@ -49,5 +49,10 @@ kubectl expose deployment pod-deployment --port=3000 --type=LoadBalancer -n less
 ```
 ## Запуск в minikube режима проброса портов и подключение к контейнерам через веб-браузер.
 ```
- minikube kubectl -- port-forward deployment/pod-deployment -n lesson2 3000:3000
+minikube kubectl -- port-forward deployment/pod-deployment -n lesson2 3000:3000
 ```
+## Проверка на странице в веб-браузере переменных REACT_APP_USERNAME, REACT_APP_COMPANY_NAME и Container name.
+
+После перезагрузки ничего не изменилось, переменные остались теми же. Возможно нагрузка небольшая, поэтому запросы не пересылаются на друго "под".
+## Проверка логов контейнеров.
+
