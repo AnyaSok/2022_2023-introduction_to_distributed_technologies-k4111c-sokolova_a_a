@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rs-configmap
+  namespace: lesson3
+data:
+  username: "Anna"
+  company: "ITMO_University"
