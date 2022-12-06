@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress
+  namespace: lesson3
+spec:
+  tls:
+  - hosts:
+      - lab3-anna.com
+    secretName: secret-tls
+  rules:
+  - host: lab3-anna.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: rs-service
+            port:
+              number: 8080
