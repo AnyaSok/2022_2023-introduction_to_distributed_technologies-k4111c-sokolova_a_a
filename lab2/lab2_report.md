@@ -55,4 +55,6 @@ minikube kubectl -- port-forward deployment/pod-deployment -n lesson2 3000:3000
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/44b815841ca09d6331f44d686bb4a9f13afb8321/lab2/images/deployment.jpg)
 После перезагрузки ничего не изменилось, переменные остались теми же. Возможно нагрузка небольшая, поэтому запросы не пересылаются на друго "под".
 ## Проверка логов контейнеров.
-![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/44b815841ca09d6331f44d686bb4a9f13afb8321/lab2/images/logs.jpg)
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/dc00c5086d8aa2fb30861ef20797ad735128584f/lab2/images/logs.jpg)
+## Создание схемы организации контейнеров и сервисов
+
