@@ -23,10 +23,11 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: rs-configmap
-                  key: username
+                  key: react_app_username
             - name: REACT_APP_COMPANY_NAME
               valueFrom:
                 configMapKeyRef:
                   name: rs-configmap
-                  key: company
-          ports: 3000
+                  key: react_app_company_name
+          ports:
+            - containerPort: 3000
