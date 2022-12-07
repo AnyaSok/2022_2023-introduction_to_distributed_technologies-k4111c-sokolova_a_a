@@ -4,5 +4,6 @@ metadata:
   name: rs-configmap
   namespace: lesson3
 data:
-  username: "Anna"
-  company: "ITMO_University"
+  react_app_username: "Anna"
+  react_app_company_name: "ITMO_University"
+
