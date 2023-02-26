@@ -57,7 +57,7 @@ kubectl expose deployment frontend --port=3000 --type=LoadBalancer
 minikube kubectl -- port-forward deployment/frontend 3000:3000
 ```
 ## Проверка на странице в веб-браузере переменных REACT_APP_USERNAME, REACT_APP_COMPANY_NAME и Container name.
-![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/44b815841ca09d6331f44d686bb4a9f13afb8321/lab2/images/deployment.jpg)
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/72ccbc5e0f3046857dbe71e1e9e1bc87b918a02f/lab2/images/deployment.png)
 
 После перезагрузки ничего не изменилось, переменные остались теми же. Похоже, что нагрузка небольшая, поэтому запросы не пересылаются на другой "под".
 ## Проверка логов контейнеров.
