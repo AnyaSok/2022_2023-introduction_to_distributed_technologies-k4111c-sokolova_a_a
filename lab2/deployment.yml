@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pod-deployment
+  name: deployment
   labels:
     app: frontend
 spec:
