@@ -128,7 +128,7 @@ kubectl logs vault
 
 Вход в vault, используя токен:
 
-![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/vault.jpg)
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/Vault.png)
 
 ## Создание схемы организации контейнеров и сервисов
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/0708cf9e31d9066411591e32a940dc3f7475f15b/lab1/images/diagram.png)
