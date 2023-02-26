@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: frontend-configmap
+  name: rs-configmap
 data:
   react_app_username: "Anna"
   react_app_company_name: "ITMO_University"
