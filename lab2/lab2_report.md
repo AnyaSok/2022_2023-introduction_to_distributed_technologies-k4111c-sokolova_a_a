@@ -59,8 +59,8 @@ minikube kubectl -- port-forward deployment/frontend 3000:3000
 ## Проверка на странице в веб-браузере переменных REACT_APP_USERNAME, REACT_APP_COMPANY_NAME и Container name.
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/2d23e2f0ed44dc548e5aa3c63e552a354602d8d6/lab2/images/deployment.png)
 
-После перезагрузки ничего не изменилось, переменные остались теми же. Похоже, что нагрузка небольшая, поэтому запросы не пересылаются на другой "под".
+После обновления ничего не изменилось, переменные остались теми же. Похоже, что нагрузка небольшая, поэтому запросы не пересылаются на другой "под".
 ## Проверка логов контейнеров.
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/2d23e2f0ed44dc548e5aa3c63e552a354602d8d6/lab2/images/logs.png)
 ## Создание схемы организации контейнеров и сервисов
-
+![Image text]()
