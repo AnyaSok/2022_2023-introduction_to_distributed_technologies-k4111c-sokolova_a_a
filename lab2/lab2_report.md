@@ -13,8 +13,8 @@
 ## Цель работы
 Ознакомиться с типами "контроллеров" развертывания контейнеров, ознакомится с сетевыми сервисами и развернуть веб приложение.
 ## Ход работы
-## Cоздание deployment 
-Cоздание deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и передача переменных в эти реплики: REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
+## Cоздание deployment
+Написание манифеста для создания deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и передача переменных в эти реплики: REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -42,6 +42,10 @@ spec:
           value: ITMO_University
         ports:
         - containerPort: 3000
+```
+Создание deployment
+```
+kubectl apply -f deployment.yml
 ```
 ## Создание сервиса через который будет доступ на эти "поды".
 ```
