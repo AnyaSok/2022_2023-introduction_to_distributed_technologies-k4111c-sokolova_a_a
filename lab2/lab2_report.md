@@ -43,10 +43,11 @@ spec:
         ports:
         - containerPort: 3000
 ```
-Создание deployment
+Применение манифеста и проверка успешного создания deployment и pods.
 ```
 kubectl apply -f deployment.yml
 ```
+![Image text]()
 ## Создание сервиса через который будет доступ на эти "поды".
 ```
 kubectl expose deployment frontend --port=3000 --type=LoadBalancer
