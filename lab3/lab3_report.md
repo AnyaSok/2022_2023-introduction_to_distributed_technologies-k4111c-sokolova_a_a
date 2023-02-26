@@ -127,6 +127,7 @@ kubectl apply -f ingress.yml
 ## Вход в веб-приложение по указанному ранее FQDN используя HTTPS и проверка наличия сертификата
 ход в веб-приложение по указанному ранее FQDN используя HTTPS
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/b76d7de63cd07990471c736f196daf59b85f6a0c/lab3/images/front.anna.com.png)
+
 Проверка наличия сертификата
 
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/aa4308ae244399f10fa82f59e13d6bf53167939c/lab3/images/certificate.png)
