@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pod-deployment
-  namespace: lesson2
   labels:
     app: frontend
 spec:
