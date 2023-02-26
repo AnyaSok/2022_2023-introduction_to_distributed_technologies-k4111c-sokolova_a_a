@@ -47,7 +47,7 @@ spec:
 ```
 kubectl apply -f deployment.yml
 ```
-![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/d349fc00ac0fc73c559f44ad2af61b924420bd83/lab2/images/applyingthemanifest.png)
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/2d23e2f0ed44dc548e5aa3c63e552a354602d8d6/lab2/images/applyingthemanifest.png)
 ## Создание сервиса, через который будет доступ на pods.
 ```
 kubectl expose deployment frontend --port=3000 --type=LoadBalancer
@@ -57,10 +57,10 @@ kubectl expose deployment frontend --port=3000 --type=LoadBalancer
 minikube kubectl -- port-forward deployment/frontend 3000:3000
 ```
 ## Проверка на странице в веб-браузере переменных REACT_APP_USERNAME, REACT_APP_COMPANY_NAME и Container name.
-![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/72ccbc5e0f3046857dbe71e1e9e1bc87b918a02f/lab2/images/deployment.png)
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/2d23e2f0ed44dc548e5aa3c63e552a354602d8d6/lab2/images/deployment.png)
 
 После перезагрузки ничего не изменилось, переменные остались теми же. Похоже, что нагрузка небольшая, поэтому запросы не пересылаются на другой "под".
 ## Проверка логов контейнеров.
-![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/dc00c5086d8aa2fb30861ef20797ad735128584f/lab2/images/logs.jpg)
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/2d23e2f0ed44dc548e5aa3c63e552a354602d8d6/lab2/images/logs.png)
 ## Создание схемы организации контейнеров и сервисов
 
