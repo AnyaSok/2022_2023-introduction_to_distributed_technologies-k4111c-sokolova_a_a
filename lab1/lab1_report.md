@@ -93,13 +93,12 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: vault
-  namespace: lesson1
   labels: 
     app: vault
 spec:
   containers:
   - name: vault
-    image: vault:1.12.1
+    image: vault:latest
     ports:
     - containerPort: 8200
 ```
