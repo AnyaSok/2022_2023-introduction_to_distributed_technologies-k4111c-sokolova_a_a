@@ -48,7 +48,7 @@ spec:
 kubectl apply -f deployment.yml
 ```
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/d349fc00ac0fc73c559f44ad2af61b924420bd83/lab2/images/applyingthemanifest.png)
-## Создание сервиса через который будет доступ на эти "поды".
+## Создание сервиса, через который будет доступ на pods.
 ```
 kubectl expose deployment frontend --port=3000 --type=LoadBalancer
 ```
