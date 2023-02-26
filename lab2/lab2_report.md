@@ -19,8 +19,7 @@ Cоздание deployment с 2 репликами контейнера ifilyani
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pod-deployment
-  namespace: lesson2
+  name: frontend
   labels:
     app: frontend
 spec:
@@ -46,11 +45,11 @@ spec:
 ```
 ## Создание сервиса через который будет доступ на эти "поды".
 ```
-kubectl expose deployment pod-deployment --port=3000 --type=LoadBalancer -n lesson2
+kubectl expose deployment frontend --port=3000 --type=LoadBalancer
 ```
 ## Запуск в minikube режима проброса портов и подключение к контейнерам через веб-браузер.
 ```
-minikube kubectl -- port-forward deployment/pod-deployment -n lesson2 3000:3000
+minikube kubectl -- port-forward deployment/frontend 3000:3000
 ```
 ## Проверка на странице в веб-браузере переменных REACT_APP_USERNAME, REACT_APP_COMPANY_NAME и Container name.
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/44b815841ca09d6331f44d686bb4a9f13afb8321/lab2/images/deployment.jpg)
