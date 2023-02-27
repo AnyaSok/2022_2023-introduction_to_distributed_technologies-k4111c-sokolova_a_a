@@ -63,4 +63,4 @@ minikube kubectl -- port-forward deployment/frontend 3000:3000
 ## Проверка логов контейнеров.
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/2d23e2f0ed44dc548e5aa3c63e552a354602d8d6/lab2/images/logs.png)
 ## Создание схемы организации контейнеров и сервисов
-![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/366104bbbac7379daa51f4a776ede00d4ea0ff6f/lab2/images/Diagram.png)
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/97a0e135728d60b7c7a08798cda77222a745985f/lab2/images/diagram.png)
