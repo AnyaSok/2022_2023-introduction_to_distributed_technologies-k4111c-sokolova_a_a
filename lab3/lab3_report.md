@@ -132,4 +132,4 @@ kubectl apply -f ingress.yml
 
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/aa4308ae244399f10fa82f59e13d6bf53167939c/lab3/images/certificate.png)
 ## Создание схемы организации контейнеров и сервисов
-![Image text]()
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/411fe97bcb4e7ce93447d23d228ac4e5e1092a95/lab3/images/Diagram.png)
