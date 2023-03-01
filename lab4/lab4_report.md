@@ -13,3 +13,12 @@
 ## Цель работы
 Познакомиться с CNI Calico и функцией IPAM Plugin, изучить особенности работы CNI и CoreDNS.
 ## Ход работы
+## При запуске minikube установка плагин CNI=calico и режима работы Multi-Node Clusters одновеременно. В рамках данной лабораторной работы развернуто 2 ноды.
+```
+minikube start --nodes 2 -p multinode --cni calico
+```
+
+Проверка успешного создания nodes.
+
+![Image text]()
+
