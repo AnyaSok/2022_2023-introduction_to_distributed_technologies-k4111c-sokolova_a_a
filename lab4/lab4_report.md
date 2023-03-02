@@ -18,7 +18,27 @@
 minikube start --nodes=2 --cni=calico
 ```
 
-Проверка успешного создания nodes.
+## Проверка работы CNI плагина Calico и количества нод.
 
 ![Image text]()
+
+![Image text]()
+
+## Проверка работы Calico с помощью функции IPAM Plugin.
+Для проверки режима IPAM необходимо для запущеных ранее нод указать label по признаку стойки или географического расположения
+
+![Image text]()
+
+## Разработка манифеста для Calico, который на основе ранее указанных меток назначает бы IP адреса "подам", исходя из пулов IP адресов которые указаны в манифесте.
+
+![Image text]()
+
+```
+kubectl calico create --allow-version-mismatch -f pool1.yml
+kubectl calico create --allow-version-mismatch -f pool2.yml
+```
+![Image text]()
+
+## Создание deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и передача переменных в эти реплики: REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
+
 
