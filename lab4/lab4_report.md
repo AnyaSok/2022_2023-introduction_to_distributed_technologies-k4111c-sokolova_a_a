@@ -41,4 +41,55 @@ kubectl calico create --allow-version-mismatch -f pool2.yml
 
 ## Создание deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и передача переменных в эти реплики: REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
 
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lab4
+  labels:
+    app: lab4
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: lab4
+  template:
+    metadata:
+      labels:
+        app: lab4
+    spec:
+      containers:
+      - name: frontend
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        env:
+        - name: REACT_APP_USERNAME
+          value: Anna
+        - name: REACT_APP_COMPANY_NAME
+          value: ITMO_University
+        ports:
+        - containerPort: 3000
+```
 
+```
+kubectl apply -f deployment.yml
+```
+
+## Создать сервис через который у вас будет доступ на эти "поды"
+
+```
+kubectl expose deployment lab4 --port=3000 --type=LoadBalancer
+```
+
+## Запустить в minikube режим проброса портов и подключитесь к вашим контейнерам через веб браузер
+
+```
+minikube kubectl -- port-forward deployment/lab4 3000:3000
+```
+
+## Проверка на странице в веб-браузере переменных REACT_APP_USERNAME, REACT_APP_COMPANY_NAME и Container name
+
+![Image text]()
+
+## 
+
+## Используя kubectl exec зайдите в любой "под" и попробуйте попинговать "поды" используя FQDN имя соседенего "пода", результаты пингов необходимо приложить к отчету.
