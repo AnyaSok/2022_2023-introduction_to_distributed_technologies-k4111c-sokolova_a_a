@@ -15,7 +15,7 @@
 ## Ход работы
 ## При запуске minikube установка плагин CNI=calico и режима работы Multi-Node Clusters одновеременно. В рамках данной лабораторной работы развернуто 2 ноды.
 ```
-minikube start --nodes 2 -p multinode --cni calico
+minikube start --nodes=2 --cni=calico
 ```
 
 Проверка успешного создания nodes.
