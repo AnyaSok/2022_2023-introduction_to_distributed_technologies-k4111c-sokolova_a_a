@@ -20,24 +20,26 @@ minikube start --nodes=2 --cni=calico
 
 ## Проверка работы CNI плагина Calico и количества нод.
 
-![Image text]()
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/getnodesall.png)
 
-![Image text]()
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/describenodes.png)
+
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/getnodes.png)
 
 ## Проверка работы Calico с помощью функции IPAM Plugin.
 Для проверки режима IPAM необходимо для запущеных ранее нод указать label по признаку стойки или географического расположения
 
-![Image text]()
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/label.png)
 
 ## Разработка манифеста для Calico, который на основе ранее указанных меток назначает бы IP адреса "подам", исходя из пулов IP адресов которые указаны в манифесте.
 
-![Image text]()
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/ippool.png)
 
 ```
 kubectl calico create --allow-version-mismatch -f pool1.yml
 kubectl calico create --allow-version-mismatch -f pool2.yml
 ```
-![Image text]()
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/getippool.png)
 
 ## Создание deployment с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и передача переменных в эти реплики: REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
 
@@ -74,6 +76,8 @@ spec:
 kubectl apply -f deployment.yml
 ```
 
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/getpods.png)
+
 ## Создать сервис через который у вас будет доступ на эти "поды"
 
 ```
@@ -88,8 +92,10 @@ minikube kubectl -- port-forward deployment/lab4 3000:3000
 
 ## Проверка на странице в веб-браузере переменных REACT_APP_USERNAME, REACT_APP_COMPANY_NAME и Container name
 
-![Image text]()
-
-## 
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/web.png)
 
 ## Используя kubectl exec зайдите в любой "под" и попробуйте попинговать "поды" используя FQDN имя соседенего "пода", результаты пингов необходимо приложить к отчету.
+
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/ping1.png)
+
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/ping2.png)
