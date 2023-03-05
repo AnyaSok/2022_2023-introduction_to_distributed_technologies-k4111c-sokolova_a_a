@@ -101,4 +101,4 @@ minikube kubectl -- port-forward deployment/lab4 3000:3000
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/ping2.png)
 
 ## Создание схемы организации контейнеров и сервисов
-![Image text]()
+![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/2483eec4fed22501b00765734ccfbfcbfc743d8d/lab4/images/diagram.png)
