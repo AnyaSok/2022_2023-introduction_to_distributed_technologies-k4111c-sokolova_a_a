@@ -36,8 +36,8 @@ minikube start --nodes=2 --cni=calico
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/ippool.png)
 
 ```
-kubectl calico create --allow-version-mismatch -f pool1.yml
-kubectl calico create --allow-version-mismatch -f pool2.yml
+calicoctl create --allow-version-mismatch -f pool1.yml
+calicoctl create --allow-version-mismatch -f pool2.yml
 ```
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/getippool.png)
 
@@ -99,3 +99,6 @@ minikube kubectl -- port-forward deployment/lab4 3000:3000
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/ping1.png)
 
 ![Image text](https://github.com/AnyaSok/2022_2023-introduction_to_distributed_technologies-k4111c-sokolova_a_a/blob/558a9f8395b420852c193fa0b8974c6c17157df4/lab4/images/ping2.png)
+
+## Создание схемы организации контейнеров и сервисов
+![Image text]()
